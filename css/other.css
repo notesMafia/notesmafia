@@ -326,6 +326,10 @@ footer{
 }
 @media (max-width:500px)
 {
+    body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../Images/halfsunmobile.jpg");
+
+    }
    .wlmDiv{
     height: 5vh;
    }

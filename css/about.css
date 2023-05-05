@@ -9,7 +9,7 @@
 
 body {
     /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/library.jpg"); */
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/beauty11.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/blueMount.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
@@ -347,6 +347,9 @@ footer{
 }
 @media (max-width:500px)
 {
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/blueMountMobile.jpg");
+    }
    .wlmDiv{
     height: 5vh;
    }
