@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/library.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    
+    
+   }
+
+   
+nav{
+    position: sticky;
+    background: #1a639a;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    bottom: 5px;
+    box-shadow: 0 10px 10px 0 black;
+    z-index: 10;
+}
+
+.logo {
+   
+    display: inline-block;
+    color: white;
+    line-height: 80px;
+    
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    transition: all .3s ease-in-out .1s;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none; 
+    font-weight: bold;
+    
+}
+
+a.active {
+    background: #1b9bff;
+    
+
+}
+
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+    color: black;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.wlmDiv{
+    
+    margin-top: 25px;
+    width: 100%; height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+   
+    background-image: url(../Images/Screenshot\ 2023-02-20\ 182638.png);
+    background-size: cover;
+}
+
+
+
+
+.text{
+    font-weight: normal;
+    font-size: 35px;
+    border-right: 2px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 3s steps(25),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+    
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+   
+    
+}
+
+.container {
+    width: 100%;
+    height: 66vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+    
+
+
+}
+
+.row {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(34, 0, 255);
+
+    align-content: center;
+    
+
+}
+
+
+
+
+.samester {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+    width: 420px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px 0 rgba(243, 241, 241, 0.832);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    transition: all .3s ease-in-out .1s;
+}
+.samester:hover{
+   transform: scale(1.1);
+
+}
+
+.samester a:hover {
+    background: #1b9bff;
+    color: black;
+}
+
+.samester a {
+    color: white;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+.samester p {
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+footer{
+    position: sticky;
+    bottom: 0;
+    margin-top: 0px;
+    background-image: url(../Images/Screenshot\ 2023-02-20\ 182638.png);
+    background-size: cover;
+    margin-top: 18px;
+    
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgFooter{
+    display: flex;
+    
+}
+.imgFooter a{
+    margin: 5px 5px;
+}
+
+.imgFooter a:hover {
+    background: none;
+
+}
+
+.divShare {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    margin-right: 20px;
+
+}
+.divShare h5{
+    font-weight: normal;
+}
+
+
+
+
+
+@media(max-width:952px) {
+    
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:858px) {
+
+    .logo img {
+        border-radius: 10px;
+        height: 70px;
+    }
+   
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    
+}
+@media (max-width:500px)
+{
+   .wlmDiv{
+    height: 5vh;
+   }
+    .text{
+        font-size: 25px;
+        
+        font-weight: normal;
+    }
+    
+
+    .samester {
+        
+       
+        width: 320px;
+        height: 250px;
+        
+    
+    }
+    .samester a {
+       
+        font-size: 25px;
+        font-weight: normal;
+    }
+    
+   
+   
+}
+@media (max-width:400px)
+{
+   .wlmDiv{
+    height: 5vh;
+   }
+    .text{
+        font-size: 20px;
+        font-weight: normal;
+        
+    }
+   
+    
+    
+    .samester {
+        width: 320px;
+        height: 250px;
+    }
+    .samester a {
+       
+        font-size: 25px;
+        font-weight: normal;
+    }
+    
+    .samester p {
+        margin-top: 10px;
+        font-size: 17px;
+        padding: 5px;
+    
+    }
+    .divShare
+    {
+        margin-right: 3px;
+    }
+
+    .share{
+        
+        font-size: 15px;
+    }
+}
+
+@media (max-width:300px)
+{
+    .samester {
+        width: 220px;
+        height: 200px;
+    }
+    .samester a {
+       
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+  
+    
+    .share{
+        
+        font-size: 13px;
+    }
+    .divShare{
+        margin-right: 5px;
+    }
+    .imgFooter img{
+        width: 40px;
+        
+    }
+    .imgFooter a{
+        margin-right: 1px;
+    }
+
+}
+
+

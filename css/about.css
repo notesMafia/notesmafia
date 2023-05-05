@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/library.jpg"); */
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/pexels-stas-knop-1340588.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+   }
+
+   
+nav{
+    position: sticky;
+    background: #1a639a;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    bottom: 5px;
+    box-shadow: 0 10px 10px 0 black;
+    z-index: 10;
+}
+
+.logo {
+   
+    display: inline-block;
+    color: white;
+    line-height: 80px;
+    
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    transition: all .3s ease-in-out .1s;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none; 
+    font-weight: bold;
+    
+}
+
+a.active {
+    background: #1b9bff;
+
+}
+
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+    color: black;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.wlmDiv{
+    
+    margin-top: 15px;
+    width: 100%; height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+   
+    background-image: url(../Images/Screenshot\ 2023-02-20\ 182638.png);
+    background-size: cover;
+}
+
+.afterWlm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; height: 6vh;
+    margin-top: 6px;
+   
+
+}
+#line{
+    color: rgb(0, 0, 0);
+    font-weight:normal;
+    font-size: 25px;
+    
+
+}
+
+.text{
+    font-weight: normal;
+    font-size: 35px;
+    border-right: 2px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 2s steps(12),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+    
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+   
+    
+}
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    
+    
+    
+
+}
+
+.row {
+    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 30px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5));
+    box-shadow: 10px 10px 22px 0 rgba(0, 0, 0, 0.605);
+
+}
+
+.col{
+    display: flex;
+    margin: 10px;
+    width: 700px;
+    height: 400px;
+    
+
+    
+}
+.imgcol{
+    width: 50%;
+    background: url("../Images/sanju.jpg");
+    background-size: cover;
+    border-radius:20%;
+    box-shadow: 10px 10px 22px 0 black;
+    
+    
+}
+.col1{
+    
+    margin: 5px;
+    
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+   padding: 5px;
+}
+.col1 h1 ,h2{
+    font-weight: normal;
+    font-size: 25px;
+}
+.textcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    
+    
+}
+.col1 a{
+    background-color: transparent;
+    
+}
+
+
+
+footer{
+    margin-top: 77px;
+    background-image: url(../Images/Screenshot\ 2023-02-20\ 182638.png);
+    background-size: cover;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgFooter{
+    display: flex;
+    
+}
+.imgFooter a{
+    margin: 5px 5px;
+}
+
+
+.divShare {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    margin-right: 20px;
+
+}
+.divShare h5{
+    font-weight: normal;
+}
+
+
+
+
+
+@media(max-width:952px) {
+    
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+    .imgcol{
+       
+        
+        
+        background-size: cover;
+        
+    }
+}
+
+@media(max-width:858px) {
+
+    .logo img {
+        border-radius: 10px;
+        height: 70px;
+    }
+   
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    #line{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .col {
+
+        width:100%;
+        height: 300px;
+        font-size: 10px;
+
+    }
+    .imgcol{
+       
+        
+        
+        background-size: cover;
+        
+    }
+}
+@media (max-width:500px)
+{
+   .wlmDiv{
+    height: 5vh;
+   }
+    .text{
+        font-size: 25px;
+        
+        font-weight: normal;
+    }
+    #line{
+        font-size: 15px;
+        font-weight: normal;
+        
+    }
+    .col1 {
+
+        width:100%;
+        height: 300px;
+        font-size: 10px;
+
+    }
+    .col1 h1,h2{
+
+        
+        font-size: 14px;
+
+    }
+    .imgcol{
+       
+       
+        background: url("../Images/sanju.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        
+    }
+
+
+    
+   
+}
+@media (max-width:400px)
+{
+   .wlmDiv{
+    height: 5vh;
+   }
+    .text{
+        font-size: 20px;
+        font-weight: normal;
+        
+    }
+    .afterWlm{
+        margin-top: 5px;
+    }
+    #line{
+        
+        font-size: 15px;
+        font-weight: normal;
+        padding: 10px;
+
+    }
+    
+    
+    .divShare
+    {
+        margin-right: 3px;
+    }
+    .footer a{
+        
+        margin-right: px;
+    }
+    .share{
+        
+        font-size: 15px;
+    }
+    .col {
+
+        width:100%;
+        height: 300px;
+        font-size: 10px;
+
+    }
+    .imgcol{
+       
+        
+        background: url("../Images/sanju2.jpg");
+        background-size: cover;
+        
+    }
+
+    
+
+
+
+.col1 a{
+    background-color: transparent;
+}
+}
+
+@media (max-width:300px)
+{
+    
+    
+    .share{
+        
+        font-size: 13px;
+    }
+    .divShare{
+        margin-right: 5px;
+    }
+    .imgFooter img{
+        width: 40px;
+        
+    }
+    .imgFooter a{
+        margin-right: 1px;
+    }
+
+}
+
+
