@@ -8,7 +8,8 @@
 
 
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/library.jpg");
+    
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/halfsun.jpg");
     /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/solidLighT.jpg"); */
     background-size:cover;
     background-repeat: no-repeat;
