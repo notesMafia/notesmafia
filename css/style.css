@@ -1,101 +1,103 @@
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
 }
-
 
 body {
     
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/halfsun.jpg");
-    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url("../Images/solidLighT.jpg"); */
     background-size:cover;
     background-repeat: no-repeat;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
+    
    }
-
-   
-nav{
+img {
+    width: 100%;
+}
+header {
     position: sticky;
     background: #1a639a;
-    height: 80px;
-    width: 100%;
     top: 0;
     bottom: 5px;
     box-shadow: 0 10px 10px 0 black;
     z-index: 10;
-}
 
-.logo {
-   
-    display: inline-block;
-    color: white;
-    line-height: 80px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: #0b2239;
+}
+header .header-left {
+    width: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
     
 }
-
-.logo img {
+header .header-left .logo {
+    /* border: 2px solid blue; */
+    width: 180px;
+    padding-right: 10px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
 }
-
-nav ul {
-    float: right;
-    margin-right: 20px;
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 23px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    margin:0 10px;
+    border-radius: 5px;
 }
-
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
     margin: 0 5px;
     transition: all .3s ease-in-out .1s;
+}
+.logo a img {
+    margin: 0 5px;
+    transition: all .3s ease-in-out .1s;
+}
+.logo a img:hover{
+    transform: scale(1.1);
 }
 nav ul li:hover{
     
     transform: scale(1.1);
  
  }
-
-
-nav ul li a {
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-decoration: none; 
-    font-weight: bold;
-    
-}
-
-a.active {
-    background: #1b9bff;
-
-}
-
-a:hover {
+nav ul li a:hover{
     background: #1b9bff;
     transition: .5s;
     color: black;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
     cursor: pointer;
     display: none;
 }
-
-#check {
-    display: none;
+header .header-right .hamburger div {
+    width: 30px;
+    height: 5px;
+    margin: 7px 0;
+    background: #fff;
 }
 
 .wlmDiv{
@@ -106,7 +108,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     color: black;
-   
     background-image: url(../Images/Screenshot\ 2023-02-20\ 182638.png);
     background-size: cover;
 }
@@ -124,7 +125,7 @@ a:hover {
 #line{
     color: white;
     font-weight:normal;
-    font-size: 25px;
+    font-size: 35px;
     
 
 }
@@ -156,9 +157,6 @@ a:hover {
 .container {
     width: 100%;
     margin: auto;
-    
-
-
 }
 
 .row {
@@ -171,7 +169,7 @@ a:hover {
 
 .row1 {
     
-     display: flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -260,123 +258,111 @@ footer{
 .divShare h5{
     font-weight: normal;
 }
-
-
-
-
-
-@media(max-width:952px) {
-    
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
+#line{
+    font-size: 25px;
+    font-weight: normal;
+        
 }
 
-@media(max-width:858px) {
-
-    .logo img {
-        border-radius: 10px;
-        height: 70px;
+@media only screen and (max-width: 1000px) {
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../Images/halfsunmobile.jpg")
     }
-   
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all.5s;
-    }
-
-    nav ul li {
-        display: block;
-    }
+    
 
     nav ul li a {
-        font-size: 20px;
-        margin: 50px 0;
-        line-height: 30px;
-
+        
+        font-size: 23px;
+        padding: 5px 10px;
+        transition: 0.2s;
+        margin:10px 10px;
+        border-radius: 5px;
     }
-
-    a:hover,
-    a.active {
-        background: none;
-        color: #0082e6;
+    nav ul li:hover{
+    
+        transform: scale(1.1);
+     
+     }
+    nav ul li a:hover{
+        background: #0b2239;
+        transition: .5s;
+        color: #1b9bff;
     }
-
-    #check:checked~ul {
+    
+    header .header-right{
+        padding-right:30px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left{
+        margin-left: 0;
+       
+        
+    }
+    header .header-left nav {
+        margin: 0;
+        position: fixed;
+        top: -100%;
         left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 20px;
+        transition: 0.5s;
+        text-align: center;
+        z-index: 2;
     }
+    header .header-left nav.active {
+       
+        top: 80px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+
+    .wlmDiv{
+        height: 5vh;
+       }
     #line{
         font-size: 20px;
         font-weight: normal;
     }
-}
-@media (max-width:500px)
-{
-    body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../Images/halfsunmobile.jpg");
-
-    }
-   .wlmDiv{
-    height: 5vh;
-   }
     .text{
         font-size: 25px;
         
         font-weight: normal;
     }
-    #line{
-        font-size: 15px;
-        font-weight: normal;
-        
-    }
-
-    .samester {
-        
-       
-        width: 320px;
-        height: 200px;
-        transition: all .3s ease-in-out .1s;
-        
     
-    }
-    .samester:hover{
-        
-        transform: scale(1.1);
+ .samester {
      
-     }
-    .samester a {
-       
-        font-size: 25px;
-        font-weight: normal;
-    }
     
-    .samester p {
-        margin-top: 10px;
-        font-size: 17px;
-        padding: 5px;
-    
-    }
+    width: 420px;
+    height: 200px;
+    transition: all .3s ease-in-out .1s;
     
 
-
-
-   
 }
-@media (max-width:400px)
+.samester:hover{
+    
+    transform: scale(1.1);
+ 
+ }
+.samester a {
+   
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.samester p {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 5px;
+
+}
+}
+
+ @media (max-width:400px)
 {
    .wlmDiv{
     height: 5vh;
@@ -477,4 +463,4 @@ footer{
 
 }
 
-
+  
